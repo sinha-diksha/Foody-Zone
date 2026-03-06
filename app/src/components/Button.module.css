@@ -4,4 +4,16 @@
   border-radius: 5px;
   padding: 6px 12px;
   color: white;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.button:hover {
+  background-color: white;
+  color: #ff4343;
+}
+
+.buttonSelected {
+  background-color: #f22f2f;
+  border: 1px solid white;
 }

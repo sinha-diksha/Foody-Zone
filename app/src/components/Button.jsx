@@ -1,6 +1,14 @@
 import styles from "./Button.module.css";
-const Button = ({ value }) => {
-  return <button className={styles.button}>{value}</button>;
+const Button = ({ value, onClick, isSelected }) => {
+  console.log(value, isSelected);
+  return (
+    <button
+      className={`${styles.button} ${isSelected ? styles.buttonSelected : ""}`}
+      onClick={onClick}
+    >
+      {value}
+    </button>
+  );
 };
 
 export default Button;
