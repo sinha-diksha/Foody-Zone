@@ -3,7 +3,6 @@ import Button from "../Button";
 import styles from "./Foodcard.module.css";
 
 const Foodcard = ({ food }) => {
-  console.log("this is diksha", food);
   return (
     <div className={styles.foodCard}>
       <div className={styles.foodImage}>

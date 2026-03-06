@@ -2,7 +2,6 @@ import styles from "./SearchResult.module.css";
 import Foodcard from "../foodcard/Foodcard.jsx";
 
 const SearchResult = ({ data }) => {
-  console.log(data);
   return (
     <div className={styles.foodCardContainer}>
       {data?.map((food) => (

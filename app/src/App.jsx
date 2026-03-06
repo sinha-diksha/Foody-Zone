@@ -20,16 +20,13 @@ function App() {
         setData(json);
         setFilteredData(json);
         setLoading(false);
-      } catch (error) {
+      } catch {
         setError(true);
-        console.log(error.message);
       }
     };
 
     fetchFoodData();
   }, []);
-
-  console.log(data);
   if (error) {
     return <div>Error</div>;
   }
@@ -47,7 +44,6 @@ function App() {
   };
 
   const filteredFood = (type) => {
-    console.log(type);
     if (type === "all") {
       setFilteredData(data);
     } else {
