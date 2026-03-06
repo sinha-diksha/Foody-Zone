@@ -5,7 +5,7 @@
 .topContainer {
   display: flex;
   justify-content: space-between;
-  min-height: 140px;
+  height: 140px;
   align-items: center;
   padding: 16px;
 }
@@ -21,8 +21,25 @@
   padding: 0 10px;
 }
 
+.SearchInput::placeholder {
+  color: white;
+}
+
+.SearchInput:focus {
+  outline: none;
+}
+
 .filterContainer {
   display: flex;
   justify-content: center;
   gap: 12px;
+  padding-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+@media (0 < width < 600px) {
+  .topContainer {
+    flex-direction: column;
+    height: 120px;
+  }
 }
